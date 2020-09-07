@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>GETTING STARTED WITH JS</title>
+        <meta name="description" content="JS test">
+       
+    </head>
+    <body>
+        
+         <script type="text/javascript" language="javascript">
+            
+       var a,b,c;
+       
+       a=parseInt(prompt("Unesi broj"));
+       b=parseInt(prompt("Unesi drugi broj"));
+       c=prompt("Unesi operaciju (+;-;*;/)");
+
+       var d=confirm("Izvrši operaciju");  
+       
+       if(d==true)
+       {
+       
+       switch(c)
+         {
+         case "+":
+               c=a+b;
+              document.write("REZULTAT JE "+c);
+               break;
+           case "-":
+               c=a-b;
+               document.write("REZULTAT JE "+c);
+               break; 
+           case "*":
+              c=a*b;
+              document.write("REZULTAT JE "+c);
+              break;
+            case "/":
+              c=a/b;
+              document.write("REZULTAT JE "+c);
+              break;
+             default :          
+              document.write("Greska"); 
+          }
+       }    
+        else 
+        {
+           alert("Probaj ponovo") 
+        } 
+            
+     </script>
+        
+        
+    </body>
+</html>
